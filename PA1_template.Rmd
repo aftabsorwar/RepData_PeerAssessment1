@@ -70,7 +70,7 @@ steps_per_interval%>%
 *step2: finding which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps*
 ```{r}
 max_steps <- steps_per_interval%>%arrange(desc(mean_steps_per_interval))
-max_steps
+max_steps$interval[1]
 ```
 
 So from this we can say on average 835-840 interval has the highest steps count among all intervals.
