@@ -43,8 +43,8 @@ steps_per_day%>%
      ggplot(aes(total_steps_per_day))+
      geom_histogram(bins = 20)+
      labs(title = "Histogram of total number of steps per day")
-
 ```
+![](plot1.png)
 
 *step2: Calculating mean and median total number of steps taken per day:*
 ```{r}
@@ -66,8 +66,8 @@ steps_per_interval%>%
     ggplot(aes(interval,mean_steps_per_interval))+
     geom_line()+
     labs(title = "Histogram of avg steps per interval acrossed all day")
-
 ```
+![](plot2.png)
 
 *step2: finding which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps*
 ```{r}
@@ -110,6 +110,7 @@ converted_repdata%>%
      geom_histogram()+
      labs(title = "Histogram of total steps per day with no NA")
 ```
+![](plot3.png)
 
 *and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?*
 ```{r}
@@ -151,6 +152,6 @@ steps_by_days%>%
     labs(title = "Time series plot of steps per interval fecet by days",
          x="Interval",
          y="Steps")
-
 ```
+![](plot4.png)
 
